@@ -1,0 +1,24 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\SoC\Kiemtra\cau1\software\cau1\obj\default\runtime\sim\mentor
+vsystem_tb
+!i10b 1
+Z1 !s100 zCAVL:Vd2[_m1D24o3]3^1
+Z2 IK>kPNcW_F<m=mbAJ4z1TJ1
+Z3 VZ8L>[zOV^i:4FeD:2Ao4i0
+Z4 dC:\SoC\Kiemtra\cau1\software\cau1\obj\default\runtime\sim\mentor
+Z5 w1710401012
+Z6 8C:/SoC/Kiemtra/cau1/system/testbench/system_tb/simulation/system_tb.v
+Z7 FC:/SoC/Kiemtra/cau1/system/testbench/system_tb/simulation/system_tb.v
+L0 6
+Z8 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1710405143.868000
+!s107 C:/SoC/Kiemtra/cau1/system/testbench/system_tb/simulation/system_tb.v|
+Z9 !s90 -reportprogress|300|C:/SoC/Kiemtra/cau1/system/testbench/system_tb/simulation/system_tb.v|
+!s101 -O0
+o-O0

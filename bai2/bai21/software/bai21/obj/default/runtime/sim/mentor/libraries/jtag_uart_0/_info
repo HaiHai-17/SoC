@@ -1,0 +1,100 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\SoC\bai2\bai21\software\bai21\obj\default\runtime\sim\mentor
+vsystem_jtag_uart_0
+!i10b 1
+!s100 _j]K?;EoW5_UonT1gzI5C2
+I?Oi=oG8:9<O]9^FXG4WII2
+V7M^eRL@W]>i<;co?kQ]=X3
+Z1 dC:\SoC\bai2\bai21\software\bai21\obj\default\runtime\sim\mentor
+Z2 w1710398604
+Z3 8C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system_jtag_uart_0.v
+Z4 FC:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system_jtag_uart_0.v
+L0 327
+Z5 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z6 !s108 1710399078.997000
+Z7 !s107 C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system_jtag_uart_0.v|
+Z8 !s90 -reportprogress|300|C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system_jtag_uart_0.v|-work|jtag_uart_0|
+!s101 -O0
+Z9 o-work jtag_uart_0 -O0
+vsystem_jtag_uart_0_scfifo_r
+!i10b 1
+!s100 ??HKd@9Enf_02gj4]8]?j2
+I8SaH6eYkAKEK7YiG?b0b`1
+VMb_3@cNcRCX2n4`1d_MkS2
+R1
+R2
+R3
+R4
+L0 240
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+vsystem_jtag_uart_0_scfifo_w
+!i10b 1
+!s100 k;N^?4Q7NgFZ1Z[29a8M@3
+I346o<=Y506C`PCVRIXWcU3
+V0X6LI[ccEz<j]Ii`:;7]f0
+R1
+R2
+R3
+R4
+L0 77
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+vsystem_jtag_uart_0_sim_scfifo_r
+!i10b 1
+!s100 Nbc?di7zfE`0]_JXHbcGg2
+ICfmedU^O<lV:QZ0VjLR1_1
+VmGNPXP4UiCG<z=CLY1g;n1
+R1
+R2
+R3
+R4
+L0 162
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+vsystem_jtag_uart_0_sim_scfifo_w
+!i10b 1
+!s100 LW@o6c4[b7d1OTL1P<YgE3
+I?Z^>T4R<hA<?R4_c3]m^a1
+V14XTETa?9jGdTjT9VFCHn2
+R1
+R2
+R3
+R4
+L0 21
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9

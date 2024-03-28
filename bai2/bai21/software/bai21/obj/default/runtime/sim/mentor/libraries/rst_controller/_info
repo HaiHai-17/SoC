@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\SoC\bai2\bai21\software\bai21\obj\default\runtime\sim\mentor
+valtera_reset_controller
+IW1bYM@B4[JghOO7e9^`LM1
+VBWWT<i0A@QcN4KE]hBS<V0
+Z1 dC:\SoC\bai2\bai21\software\bai21\obj\default\runtime\sim\mentor
+Z2 w1710398604
+8C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/altera_reset_controller.v
+FC:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/altera_reset_controller.v
+L0 29
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-work rst_controller -O0
+!i10b 1
+!s100 d6OhQ3ZV[0FnS<EnQ_o:C2
+!s85 0
+!s108 1710399078.177000
+!s107 C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/altera_reset_controller.v|-work|rst_controller|
+!s101 -O0
+valtera_reset_synchronizer
+!i10b 1
+!s100 G8]7KZl6Md<f2m?b?OQ=13
+IohcH@KbbD7gTQZkB7MAzz2
+V3CjoOZCIEdzCJgPn8]D7`2
+R1
+R2
+8C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/altera_reset_synchronizer.v
+FC:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/altera_reset_synchronizer.v
+L0 24
+R3
+r1
+!s85 0
+31
+!s108 1710399078.237000
+!s107 C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/altera_reset_synchronizer.v|-work|rst_controller|
+!s101 -O0
+R4

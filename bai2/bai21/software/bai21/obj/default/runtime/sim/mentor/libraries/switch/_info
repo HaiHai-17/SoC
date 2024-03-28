@@ -1,0 +1,24 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\SoC\bai2\bai21\software\bai21\obj\default\runtime\sim\mentor
+vsystem_switch
+!i10b 1
+!s100 c8c=KEPQL6`P=Higea`@;2
+I>UglKA`hE<igfcSL=OXY93
+VO@Jn5QCY]4]SES2F?I;920
+Z1 dC:\SoC\bai2\bai21\software\bai21\obj\default\runtime\sim\mentor
+w1710398604
+8C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system_switch.v
+FC:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system_switch.v
+L0 21
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1710399078.937000
+!s107 C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system_switch.v|
+!s90 -reportprogress|300|C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system_switch.v|-work|switch|
+!s101 -O0
+o-work switch -O0

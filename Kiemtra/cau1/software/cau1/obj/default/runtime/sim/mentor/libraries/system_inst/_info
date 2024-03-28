@@ -1,0 +1,24 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\SoC\Kiemtra\cau1\software\cau1\obj\default\runtime\sim\mentor
+vsystem
+!i10b 1
+!s100 <QmMgI^7KgCPEP7JPB4VM0
+IXV16WY]Rd=AHPE5Oa_fc[2
+V<RzfZ06WjJ@Z5OXb;2[KB0
+Z1 dC:\SoC\Kiemtra\cau1\software\cau1\obj\default\runtime\sim\mentor
+w1710401014
+8C:/SoC/Kiemtra/cau1/system/testbench/system_tb/simulation/submodules/system.v
+FC:/SoC/Kiemtra/cau1/system/testbench/system_tb/simulation/submodules/system.v
+L0 6
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1710405143.796000
+!s107 C:/SoC/Kiemtra/cau1/system/testbench/system_tb/simulation/submodules/system.v|
+!s90 -reportprogress|300|C:/SoC/Kiemtra/cau1/system/testbench/system_tb/simulation/submodules/system.v|-work|system_inst|
+!s101 -O0
+o-work system_inst -O0

@@ -1,0 +1,24 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\SoC\Kiemtra\cau1\software\cau1\obj\default\runtime\sim\mentor
+vsystem_onchip_memory2_0
+!i10b 1
+!s100 d?k3aH=18ARFomnFk@?;R2
+I@m]bzhG6m61b0jRM^:5en1
+Vn[5XfX4e;ezLW9^`]k2QS1
+Z1 dC:\SoC\Kiemtra\cau1\software\cau1\obj\default\runtime\sim\mentor
+w1710401020
+8C:/SoC/Kiemtra/cau1/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v
+FC:/SoC/Kiemtra/cau1/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v
+L0 21
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1710405142.988000
+!s107 C:/SoC/Kiemtra/cau1/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v|
+!s90 -reportprogress|300|C:/SoC/Kiemtra/cau1/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v|-work|onchip_memory2_0|
+!s101 -O0
+o-work onchip_memory2_0 -O0

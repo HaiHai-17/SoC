@@ -1,0 +1,49 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\SoC\bai2\bai21\software\bai21\obj\default\runtime\sim\mentor
+vsystem_addr_router
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 hOO>Md[6Fg>T^@2CleUK]2
+IL4OSTh1ZF4z9L=4h>4@d]2
+VXP5dKjO7He_P64jcn7][a3
+Z2 !s105 system_addr_router_sv_unit
+S1
+Z3 dC:\SoC\bai2\bai21\software\bai21\obj\default\runtime\sim\mentor
+Z4 w1710398604
+Z5 8C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system_addr_router.sv
+Z6 FC:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system_addr_router.sv
+L0 86
+Z7 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z8 !s108 1710399078.387000
+Z9 !s107 C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system_addr_router.sv|
+Z10 !s90 -reportprogress|300|-sv|C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system_addr_router.sv|-work|addr_router|
+!s101 -O0
+Z11 o-sv -work addr_router -O0
+vsystem_addr_router_default_decode
+R1
+!i10b 1
+!s100 cinDmYJ3MB<Z;9Ml`KK2G3
+IUWFhM_5;f9B[jd;9UCl[N0
+V^^f9FhzV>cIQgk;3JX0z:3
+R2
+S1
+R3
+R4
+R5
+R6
+L0 45
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+R11

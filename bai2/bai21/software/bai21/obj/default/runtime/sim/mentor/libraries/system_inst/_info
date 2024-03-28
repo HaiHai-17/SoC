@@ -1,0 +1,24 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\SoC\bai2\bai21\software\bai21\obj\default\runtime\sim\mentor
+vsystem
+!i10b 1
+!s100 _@f0QnFRW]V8T25MU<G0g0
+INzg=QDB1gPf;:>Wa`TiX40
+Vl<k]mbA<?9JObioBaK_dg1
+Z1 dC:\SoC\bai2\bai21\software\bai21\obj\default\runtime\sim\mentor
+w1710398596
+8C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system.v
+FC:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system.v
+L0 6
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1710399079.928000
+!s107 C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system.v|
+!s90 -reportprogress|300|C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system.v|-work|system_inst|
+!s101 -O0
+o-work system_inst -O0

@@ -1,0 +1,28 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\SoC\bai2\bai21\software\bai21\obj\default\runtime\sim\mentor
+valtera_avalon_clock_source
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+DXx26 altera_avalon_vip_pkgs_lib 13 verbosity_pkg 0 22 7CE4>P2bi0Dk^]GWPVN^R2
+!i10b 1
+!s100 =oFS8_?OXa`=bmofW5?MD0
+I;>GjZCaaHWE:L3Y?VLj^S1
+VLJ9mjBZS9dcR=LGE?Y3HK3
+!s105 altera_avalon_clock_source_sv_unit
+S1
+Z2 dC:\SoC\bai2\bai21\software\bai21\obj\default\runtime\sim\mentor
+Z3 w1710398596
+8C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/altera_avalon_clock_source.sv
+FC:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/altera_avalon_clock_source.sv
+L0 23
+Z4 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1710399079.868000
+!s107 C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/altera_avalon_clock_source.sv|
+!s90 -reportprogress|300|-sv|C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/altera_avalon_clock_source.sv|-L|altera_avalon_vip_pkgs_lib|-work|system_inst_clk_bfm|
+!s101 -O0
+o-sv -L altera_avalon_vip_pkgs_lib -work system_inst_clk_bfm -O0

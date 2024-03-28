@@ -1,0 +1,27 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\SoC\bai2\bai21\software\bai21\obj\default\runtime\sim\mentor
+vsystem_irq_mapper
+DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 Sz[6]=0E`dF21T@F7Cf2A0
+IY1mh_NKD;LRLcgfN8DJlT2
+VhoidS_i4MOTNFbn?eH`Bh3
+!s105 system_irq_mapper_sv_unit
+S1
+Z1 dC:\SoC\bai2\bai21\software\bai21\obj\default\runtime\sim\mentor
+w1710398604
+8C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system_irq_mapper.sv
+FC:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system_irq_mapper.sv
+L0 31
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1710399077.727000
+!s107 C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system_irq_mapper.sv|
+!s90 -reportprogress|300|-sv|C:/SoC/bai2/bai21/system/testbench/system_tb/simulation/submodules/system_irq_mapper.sv|-work|irq_mapper|
+!s101 -O0
+o-sv -work irq_mapper -O0
