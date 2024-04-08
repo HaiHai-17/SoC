@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Mar 28 15:00:51 2024
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : bai63
+Top-level Entity Name : bai63
+Family : Cyclone IV E
+Total logic elements : 1,904
+    Total combinational functions : 1,696
+    Dedicated logic registers : 1,015
+Total registers : 1015
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 273,408
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
