@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\SoC\bai9\bai92
+vbai92
+Z1 IgW6L?G6KF?_?ATCFc1V0I3
+Z2 V>Vb4PakVCkCHkn]`1LcQ:1
+Z3 dD:\SoC\bai9\bai92
+Z4 w1712549652
+Z5 8D:/SoC/bai9/bai92/bai92.v
+Z6 FD:/SoC/bai9/bai92/bai92.v
+L0 1
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 f4]Jb^Xz:L1bmNda[Hm2i3
+!s85 0
+Z10 !s108 1712550236.795000
+Z11 !s107 D:/SoC/bai9/bai92/bai92.v|
+Z12 !s90 -reportprogress|300|-work|work|D:/SoC/bai9/bai92/bai92.v|
+!s101 -O0
+vbai92_tb
+!i10b 1
+!s100 3GYoM1aYXi^[WAoTI4j<L1
+I@_9R=Dh7?lX]Tf:FHjij=1
+VK@j9=T^PA5n@SMKP?^MNg3
+R3
+w1712550191
+8D:\SoC\bai9\bai92\bai92_tb.v
+FD:\SoC\bai9\bai92\bai92_tb.v
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1712550239.082000
+!s107 D:\SoC\bai9\bai92\bai92_tb.v|
+!s90 -reportprogress|300|-work|work|D:\SoC\bai9\bai92\bai92_tb.v|
+!s101 -O0
+R8

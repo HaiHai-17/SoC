@@ -1,5 +1,5 @@
 Analysis & Synthesis report for bai91
-Thu Apr 04 15:29:22 2024
+Mon Apr 08 10:44:37 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -171,13 +171,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 04 15:29:21 2024           ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 08 10:44:37 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; bai91                                           ;
 ; Top-level Entity Name              ; bai91                                           ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 3,406                                           ;
-;     Total combinational functions  ; 2,339                                           ;
+; Total logic elements               ; 3,405                                           ;
+;     Total combinational functions  ; 2,338                                           ;
 ;     Dedicated logic registers      ; 2,330                                           ;
 ; Total registers                    ; 2330                                            ;
 ; Total pins                         ; 2                                               ;
@@ -284,12 +284,11 @@ applicable agreement for further details.
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ; < 0.1%      ;
-;     Processors 5-8         ;   0.0%      ;
+;     Processors 2-8         ; < 0.1%      ;
 +----------------------------+-------------+
 
 
@@ -404,16 +403,16 @@ applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 3,406          ;
+; Estimated Total logic elements              ; 3,405          ;
 ;                                             ;                ;
-; Total combinational functions               ; 2339           ;
+; Total combinational functions               ; 2338           ;
 ; Logic element usage by number of LUT inputs ;                ;
 ;     -- 4 input functions                    ; 1064           ;
-;     -- 3 input functions                    ; 863            ;
-;     -- <=2 input functions                  ; 412            ;
+;     -- 3 input functions                    ; 861            ;
+;     -- <=2 input functions                  ; 413            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 2160           ;
+;     -- normal mode                          ; 2159           ;
 ;     -- arithmetic mode                      ; 179            ;
 ;                                             ;                ;
 ; Total registers                             ; 2330           ;
@@ -425,7 +424,7 @@ applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 1875           ;
-; Total fan-out                               ; 18621          ;
+; Total fan-out                               ; 18617          ;
 ; Average fan-out                             ; 3.78           ;
 +---------------------------------------------+----------------+
 
@@ -435,9 +434,9 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                                           ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |bai91                                                                                                          ; 2339 (1)          ; 2330 (0)     ; 310784      ; 0            ; 0       ; 0         ; 2    ; 0            ; |bai91                                                                                                                                                                                                                                                                                                                                                                        ; work         ;
-;    |sld_hub:auto_hub|                                                                                           ; 207 (1)           ; 130 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bai91|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                                                       ; work         ;
-;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                            ; 206 (163)         ; 130 (101)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bai91|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                                                          ; work         ;
+; |bai91                                                                                                          ; 2338 (1)          ; 2330 (0)     ; 310784      ; 0            ; 0       ; 0         ; 2    ; 0            ; |bai91                                                                                                                                                                                                                                                                                                                                                                        ; work         ;
+;    |sld_hub:auto_hub|                                                                                           ; 206 (1)           ; 130 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bai91|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                                                       ; work         ;
+;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                            ; 205 (162)         ; 130 (101)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bai91|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                                                                                          ; work         ;
 ;          |sld_rom_sr:hub_info_reg|                                                                              ; 26 (26)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bai91|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                                                                                                                                                                                                                                  ; work         ;
 ;          |sld_shadow_jsm:shadow_jsm|                                                                            ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bai91|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_shadow_jsm:shadow_jsm                                                                                                                                                                                                                                                                                ; work         ;
 ;    |sld_signaltap:auto_signaltap_0|                                                                             ; 638 (1)           ; 1324 (142)   ; 36864       ; 0            ; 0       ; 0         ; 0    ; 0            ; |bai91|sld_signaltap:auto_signaltap_0                                                                                                                                                                                                                                                                                                                                         ; work         ;
@@ -1238,6 +1237,18 @@ Encoding Type:  One-Hot
 ; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |bai91|system:Nios_system|system_nios2_qsys_0:nios2_qsys_0|E_logic_result[8]                                                                                                                                                                                                                                              ;
 ; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |bai91|system:Nios_system|system_nios2_qsys_0:nios2_qsys_0|W_rf_wr_data[10]                                                                                                                                                                                                                                               ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |bai91|system:Nios_system|system_nios2_qsys_0:nios2_qsys_0|D_dst_regnum[3]                                                                                                                                                                                                                                                ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |bai91|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg[0]                                                                                                                                                                                                                                 ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |bai91|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]                                                                                                                                                                                                                                    ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |bai91|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irf_reg[3][5]                                                                                                                                                                                                                                        ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |bai91|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irf_reg[2][7]                                                                                                                                                                                                                                        ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |bai91|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][0]                                                                                                                                                                                                                                        ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |bai91|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|word_counter[2]                                                                                                                                                                                                              ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |bai91|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[3][7]                                                                                                                                                                                                                                 ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |bai91|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[2][5]                                                                                                                                                                                                                                 ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |bai91|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[1][3]                                                                                                                                                                                                                                 ;
+; 34:1               ; 4 bits    ; 88 LEs        ; 56 LEs               ; 32 LEs                 ; Yes        ; |bai91|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[0]                                                                                                                                                                                                                                   ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |bai91|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[3]                                                                                                                                                                                                                                          ;
+; 36:1               ; 4 bits    ; 96 LEs        ; 64 LEs               ; 32 LEs                 ; Yes        ; |bai91|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[0]                                                                                                                                                                                                                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -3539,13 +3550,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
 
 
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:08     ;
-+----------------+--------------+
++---------------------------------+
+; Elapsed Time Per Partition      ;
++------------------+--------------+
+; Partition Name   ; Elapsed Time ;
++------------------+--------------+
+; Top              ; 00:00:04     ;
+; sld_hub:auto_hub ; 00:00:00     ;
++------------------+--------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -3776,7 +3788,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Apr 04 15:28:57 2024
+    Info: Processing started: Mon Apr 08 10:44:22 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bai91 -c bai91
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file system/synthesis/system.v
@@ -3862,6 +3874,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file memory.
     Info (12023): Found entity 1: Memory
 Info (12021): Found 1 design units, including 1 entities, in source file bai91.v
     Info (12023): Found entity 1: bai91
+Info (12021): Found 1 design units, including 1 entities, in source file lab7_part1_tb.v
+    Info (12023): Found entity 1: lab7_part1_tb
 Warning (10037): Verilog HDL or VHDL warning at system_nios2_qsys_0.v(1567): conditional expression evaluates to a constant
 Warning (10037): Verilog HDL or VHDL warning at system_nios2_qsys_0.v(1569): conditional expression evaluates to a constant
 Warning (10037): Verilog HDL or VHDL warning at system_nios2_qsys_0.v(1725): conditional expression evaluates to a constant
@@ -4116,20 +4130,25 @@ Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 8 registers lost all their fanouts during netlist optimizations.
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "sld_hub:auto_hub|receive[0][0]" is stuck at GND
+Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
 Info (144001): Generated suppressed messages file D:/SoC/bai9/bai91/output_files/bai91.map.smsg
 Info (35024): Succesfully connected in-system debug instance "auto_signaltap_0" to all 214 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3804 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3803 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 3549 logic cells
+    Info (21061): Implemented 3548 logic cells
     Info (21064): Implemented 248 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4782 megabytes
-    Info: Processing ended: Thu Apr 04 15:29:22 2024
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:18
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4790 megabytes
+    Info: Processing ended: Mon Apr 08 10:44:37 2024
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:12
 
 
 +------------------------------------------+
