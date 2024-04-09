@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\BTap\BTap\Tuan8\Bai1\software\bai1\obj\default\runtime\sim\mentor
+vMemory
+!i10b 1
+!s100 ^9G;?GHPLb;jQA:Azo_>e2
+IND?TCMPo;ABFcdl?DL_:Z2
+VOkjiTVCeO_Y[==E4IWfCX3
+Z1 dE:\BTap\BTap\Tuan8\Bai1\software\bai1\obj\default\runtime\sim\mentor
+w1711957401
+8E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/Memory.v
+FE:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/Memory.v
+L0 1
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1711960205.972000
+!s107 E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/Memory.v|
+!s90 -reportprogress|300|E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/Memory.v|-work|Memory_0|
+!s101 -O0
+o-work Memory_0 -O0
+n@memory

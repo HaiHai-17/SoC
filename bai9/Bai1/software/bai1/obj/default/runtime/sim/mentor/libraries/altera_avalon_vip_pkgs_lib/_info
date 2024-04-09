@@ -1,0 +1,26 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\BTap\BTap\Tuan8\Bai1\software\bai1\obj\default\runtime\sim\mentor
+Xverbosity_pkg
+DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 HdGomFL7dB@maMBdH2<?S2
+I:bKC=:3hUJ_66YDT>3CQi1
+V:bKC=:3hUJ_66YDT>3CQi1
+S1
+Z1 dE:\BTap\BTap\Tuan8\Bai1\software\bai1\obj\default\runtime\sim\mentor
+w1711957395
+8E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/verbosity_pkg.sv
+FE:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/verbosity_pkg.sv
+L0 61
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1711960204.004000
+!s107 E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/verbosity_pkg.sv|
+!s90 -reportprogress|300|-sv|E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/verbosity_pkg.sv|-work|altera_avalon_vip_pkgs_lib|
+!s101 -O0
+o-sv -work altera_avalon_vip_pkgs_lib -O0

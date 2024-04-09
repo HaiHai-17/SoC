@@ -1,0 +1,19 @@
+!SESSION 2024-04-09 09:49:12.262 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-09 09:49:55.699
+!MESSAGE Indexed 'bai1_bsp' (77 sources, 123 headers) in 1.42 sec: 4,382 declarations; 5,450 references; 0 unresolved inclusions; 3 syntax errors; 18 unresolved names (0.18%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-09 09:49:55.997
+!MESSAGE Indexed 'bai1' (1 sources, 63 headers) in 0.29 sec: 2,396 declarations; 2,241 references; 1 unresolved inclusions; 2 syntax errors; 8 unresolved names (0.17%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-09 09:57:20.323
+!MESSAGE Indexed 'bai1_bsp' (77 sources, 123 headers) in 0.58 sec: 4,382 declarations; 5,450 references; 0 unresolved inclusions; 3 syntax errors; 18 unresolved names (0.18%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-09 09:57:20.547
+!MESSAGE Indexed 'bai1' (1 sources, 63 headers) in 0.20 sec: 2,396 declarations; 2,241 references; 1 unresolved inclusions; 2 syntax errors; 8 unresolved names (0.17%)

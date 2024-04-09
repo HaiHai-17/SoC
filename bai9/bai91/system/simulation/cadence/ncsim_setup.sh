@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 13.0sp1 232 win32 2024.04.04.14:51:48
+# ACDS 13.0sp1 232 win32 2024.04.09.10:49:27
 
 # ----------------------------------------
 # ncsim - auto-generated simulation script
@@ -64,6 +64,7 @@ mkdir -p ./libraries/nios2_qsys_0_jtag_debug_module_translator_avalon_universal_
 mkdir -p ./libraries/nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent/
 mkdir -p ./libraries/nios2_qsys_0_jtag_debug_module_translator/
 mkdir -p ./libraries/nios2_qsys_0_instruction_master_translator/
+mkdir -p ./libraries/Memory_0/
 mkdir -p ./libraries/jtag_uart_0/
 mkdir -p ./libraries/onchip_memory2_0/
 mkdir -p ./libraries/nios2_qsys_0/
@@ -126,6 +127,7 @@ if [ $SKIP_COM -eq 0 ]; then
   ncvlog -sv "$QSYS_SIMDIR/submodules/altera_merlin_master_agent.sv"                   -work nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent        -cdslib ./cds_libs/nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent.cds.lib       
   ncvlog -sv "$QSYS_SIMDIR/submodules/altera_merlin_slave_translator.sv"               -work nios2_qsys_0_jtag_debug_module_translator                                         -cdslib ./cds_libs/nios2_qsys_0_jtag_debug_module_translator.cds.lib                                        
   ncvlog -sv "$QSYS_SIMDIR/submodules/altera_merlin_master_translator.sv"              -work nios2_qsys_0_instruction_master_translator                                        -cdslib ./cds_libs/nios2_qsys_0_instruction_master_translator.cds.lib                                       
+  ncvlog     "$QSYS_SIMDIR/submodules/Memory.v"                                        -work Memory_0                                                                          -cdslib ./cds_libs/Memory_0.cds.lib                                                                         
   ncvlog     "$QSYS_SIMDIR/submodules/system_jtag_uart_0.v"                            -work jtag_uart_0                                                                       -cdslib ./cds_libs/jtag_uart_0.cds.lib                                                                      
   ncvlog     "$QSYS_SIMDIR/submodules/system_onchip_memory2_0.v"                       -work onchip_memory2_0                                                                  -cdslib ./cds_libs/onchip_memory2_0.cds.lib                                                                 
   ncvlog     "$QSYS_SIMDIR/submodules/system_nios2_qsys_0.v"                           -work nios2_qsys_0                                                                      -cdslib ./cds_libs/nios2_qsys_0.cds.lib                                                                     

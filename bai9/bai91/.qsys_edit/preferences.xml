@@ -9,16 +9,16 @@
  </systemtable>
  <clocktable>
   <columns>
-   <clockname preferredWidth="269" />
-   <clocksource preferredWidth="268" />
-   <frequency preferredWidth="249" />
+   <clockname preferredWidth="363" />
+   <clocksource preferredWidth="362" />
+   <frequency preferredWidth="345" />
   </columns>
  </clocktable>
- <window width="1100" height="800" x="0" y="0" />
- <library
-   expandedCategories="Library/Bridges/Memory-Mapped,Library,Library/Interface Protocols/Serial,Library/Bridges,Project,Library/Verification,Library/Interface Protocols,Library/Verification/Debug &amp; Performance" />
+ <library expandedCategories="Library,Project" />
+ <window width="1100" height="800" x="540" y="65" />
+ <hdlexample language="VERILOG" />
  <generation
-   testbench_system="NONE"
-   testbench_simulation="VERILOG"
-   simulation="NONE" />
+   simulation="VERILOG"
+   testbench_system="SIMPLE"
+   testbench_simulation="VERILOG" />
 </preferences>

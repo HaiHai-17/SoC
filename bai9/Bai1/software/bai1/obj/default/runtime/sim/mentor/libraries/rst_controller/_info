@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\BTap\BTap\Tuan8\Bai1\software\bai1\obj\default\runtime\sim\mentor
+valtera_reset_controller
+IIP:AD5Jd<NnaUeiUG0_c21
+VBWWT<i0A@QcN4KE]hBS<V0
+Z1 dE:\BTap\BTap\Tuan8\Bai1\software\bai1\obj\default\runtime\sim\mentor
+Z2 w1711957401
+8E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_reset_controller.v
+FE:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_reset_controller.v
+L0 29
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-work rst_controller -O0
+!i10b 1
+!s100 aOU@8]4b[7OUZMABg6gJ32
+!s85 0
+!s108 1711960204.970000
+!s107 E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_reset_controller.v|-work|rst_controller|
+!s101 -O0
+valtera_reset_synchronizer
+!i10b 1
+!s100 6S_m@5of>ElMB8Iz9HbJ22
+I<<5>lCUb?lnWceWXb6bUC0
+V3CjoOZCIEdzCJgPn8]D7`2
+R1
+R2
+8E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_reset_synchronizer.v
+FE:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_reset_synchronizer.v
+L0 24
+R3
+r1
+!s85 0
+31
+!s108 1711960205.042000
+!s107 E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_reset_synchronizer.v|-work|rst_controller|
+!s101 -O0
+R4

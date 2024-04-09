@@ -1,0 +1,27 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\BTap\BTap\Tuan8\Bai1\software\bai1\obj\default\runtime\sim\mentor
+valtera_merlin_master_agent
+DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 z0;BSSoGe=lUX=C<G;8^U0
+IK[VV>mR_jGhTCK66:V1bB0
+VG[gHYg_J=R2@KnI_[bEjA0
+!s105 altera_merlin_master_agent_sv_unit
+S1
+Z1 dE:\BTap\BTap\Tuan8\Bai1\software\bai1\obj\default\runtime\sim\mentor
+w1711957401
+8E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_merlin_master_agent.sv
+FE:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_merlin_master_agent.sv
+L0 28
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1711960205.727000
+!s107 E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_merlin_master_agent.sv|
+!s90 -reportprogress|300|-sv|E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_merlin_master_agent.sv|-work|nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent|
+!s101 -O0
+o-sv -work nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent -O0

@@ -6,9 +6,12 @@
    version="1.0"
    description=""
    tags=""
-   categories="" />
+   categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
+   element $${FILENAME}
+   {
+   }
    element Memory_0
    {
       datum _sortIndex
@@ -84,19 +87,19 @@
 }
 ]]></parameter>
  <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
- <parameter name="device" value="EP4CE115F29C7" />
+ <parameter name="device" value="EP4CE115F29C8" />
  <parameter name="deviceFamily" value="Cyclone IV E" />
- <parameter name="deviceSpeedGrade" value="7" />
+ <parameter name="deviceSpeedGrade" value="8" />
  <parameter name="fabricMode" value="QSYS" />
  <parameter name="generateLegacySim" value="false" />
  <parameter name="generationId" value="0" />
  <parameter name="globalResetBus" value="false" />
  <parameter name="hdlLanguage" value="VERILOG" />
  <parameter name="maxAdditionalLatency" value="1" />
- <parameter name="projectName" value="" />
+ <parameter name="projectName" value="bai92.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1712215939389" />
+ <parameter name="timeStamp" value="1712633979380" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
@@ -212,7 +215,7 @@
   <parameter name="tightlyCoupledInstructionMaster1AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster2AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster3AddrWidth" value="1" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x8000' end='0x10000' /><slave name='nios2_qsys_0.jtag_debug_module' start='0x10800' end='0x11000' /><slave name='Memory_0.avalon_slave_0' start='0x11000' end='0x11040' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x11048' end='0x11050' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x8000' end='0x10000' /><slave name='nios2_qsys_0.jtag_debug_module' start='0x10800' end='0x11000' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x11048' end='0x11050' /></address-map>]]></parameter>
   <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x8000' end='0x10000' /><slave name='nios2_qsys_0.jtag_debug_module' start='0x10800' end='0x11000' /><slave name='Memory_0.avalon_slave_0' start='0x11000' end='0x11040' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x11048' end='0x11050' /></address-map>]]></parameter>
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="deviceFamilyName" value="Cyclone IV E" />
@@ -275,6 +278,7 @@
  <module kind="Memory" version="1.0" enabled="1" name="Memory_0">
   <parameter name="DATA_WIDTH" value="32" />
   <parameter name="ADDRESS_WIDTH" value="4" />
+  <parameter name="AUTO_CLOCK_SINK_CLOCK_RATE" value="50000000" />
  </module>
  <connection
    kind="avalon"
@@ -298,12 +302,12 @@
  <connection
    kind="reset"
    version="13.0"
-   start="nios2_qsys_0.jtag_debug_module_reset"
+   start="clk_0.clk_reset"
    end="nios2_qsys_0.reset_n" />
  <connection
    kind="reset"
    version="13.0"
-   start="clk_0.clk_reset"
+   start="nios2_qsys_0.jtag_debug_module_reset"
    end="nios2_qsys_0.reset_n" />
  <connection
    kind="clock"
@@ -311,11 +315,6 @@
    start="clk_0.clk"
    end="onchip_memory2_0.clk1" />
  <connection
-   kind="reset"
-   version="13.0"
-   start="clk_0.clk_reset"
-   end="onchip_memory2_0.reset1" />
- <connection
    kind="avalon"
    version="13.0"
    start="nios2_qsys_0.data_master"
@@ -324,6 +323,11 @@
   <parameter name="baseAddress" value="0x8000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clk_0.clk_reset"
+   end="onchip_memory2_0.reset1" />
  <connection
    kind="avalon"
    version="13.0"
@@ -338,45 +342,45 @@
    version="13.0"
    start="nios2_qsys_0.jtag_debug_module_reset"
    end="onchip_memory2_0.reset1" />
- <connection
-   kind="reset"
-   version="13.0"
-   start="nios2_qsys_0.jtag_debug_module_reset"
-   end="jtag_uart_0.reset" />
- <connection
-   kind="avalon"
-   version="13.0"
-   start="nios2_qsys_0.instruction_master"
-   end="jtag_uart_0.avalon_jtag_slave">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011048" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="13.0"
-   start="nios2_qsys_0.data_master"
-   end="jtag_uart_0.avalon_jtag_slave">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011048" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="reset"
-   version="13.0"
-   start="clk_0.clk_reset"
-   end="jtag_uart_0.reset" />
  <connection kind="clock" version="13.0" start="clk_0.clk" end="jtag_uart_0.clk" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="Memory_0.reset_sink" />
+   end="jtag_uart_0.reset" />
+ <connection
+   kind="avalon"
+   version="13.0"
+   start="nios2_qsys_0.data_master"
+   end="jtag_uart_0.avalon_jtag_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00011048" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="13.0"
+   start="nios2_qsys_0.instruction_master"
+   end="jtag_uart_0.avalon_jtag_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00011048" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="reset"
+   version="13.0"
+   start="nios2_qsys_0.jtag_debug_module_reset"
+   end="jtag_uart_0.reset" />
  <connection
    kind="clock"
    version="13.0"
    start="clk_0.clk"
    end="Memory_0.clock_sink" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clk_0.clk_reset"
+   end="Memory_0.reset_sink" />
  <connection
    kind="avalon"
    version="13.0"
@@ -393,20 +397,6 @@
    end="jtag_uart_0.irq">
   <parameter name="irqNumber" value="0" />
  </connection>
- <connection
-   kind="avalon"
-   version="13.0"
-   start="nios2_qsys_0.instruction_master"
-   end="Memory_0.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00011000" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="reset"
-   version="13.0"
-   start="nios2_qsys_0.jtag_debug_module_reset"
-   end="Memory_0.reset_sink" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
 </system>

@@ -1,16 +1,16 @@
-Fitter Status : Successful - Mon Apr 08 10:44:59 2024
+Fitter Status : Successful - Tue Apr 09 10:51:23 2024
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : bai91
 Top-level Entity Name : bai91
 Family : Cyclone IV E
-Device : EP4CE115F29C7
+Device : EP4CE115F29C8
 Timing Models : Final
-Total logic elements : 3,242 / 114,480 ( 3 % )
-    Total combinational functions : 2,345 / 114,480 ( 2 % )
-    Dedicated logic registers : 2,322 / 114,480 ( 2 % )
-Total registers : 2322
+Total logic elements : 1,714 / 114,480 ( 1 % )
+    Total combinational functions : 1,586 / 114,480 ( 1 % )
+    Dedicated logic registers : 962 / 114,480 ( < 1 % )
+Total registers : 962
 Total pins : 2 / 529 ( < 1 % )
 Total virtual pins : 0
-Total memory bits : 310,784 / 3,981,312 ( 8 % )
+Total memory bits : 273,920 / 3,981,312 ( 7 % )
 Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )

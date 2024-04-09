@@ -1,0 +1,24 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\BTap\BTap\Tuan8\Bai1\software\bai1\obj\default\runtime\sim\mentor
+vsystemne_onchip_memory2_0
+!i10b 1
+!s100 5YN<VClkd7:DU`M4h3PZC1
+IH>[5eeNz9IIdU3V05Zhl82
+Vl3G2AzQgQ^j3ziSeIzN:^0
+Z1 dE:\BTap\BTap\Tuan8\Bai1\software\bai1\obj\default\runtime\sim\mentor
+w1711957400
+8E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_onchip_memory2_0.v
+FE:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_onchip_memory2_0.v
+L0 21
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1711960206.160000
+!s107 E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_onchip_memory2_0.v|
+!s90 -reportprogress|300|E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_onchip_memory2_0.v|-work|onchip_memory2_0|
+!s101 -O0
+o-work onchip_memory2_0 -O0

@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 13.0sp1 232 win32 2024.04.04.14:51:48
+# ACDS 13.0sp1 232 win32 2024.04.09.10:49:27
 
 # ----------------------------------------
 # vcs - auto-generated simulation script
@@ -83,6 +83,7 @@ vcs -lca -timescale=1ps/1ps -sverilog +verilog2001ext+.v -ntb_opts dtm $USER_DEF
   $QSYS_SIMDIR/submodules/altera_merlin_master_agent.sv \
   $QSYS_SIMDIR/submodules/altera_merlin_slave_translator.sv \
   $QSYS_SIMDIR/submodules/altera_merlin_master_translator.sv \
+  $QSYS_SIMDIR/submodules/Memory.v \
   $QSYS_SIMDIR/submodules/system_jtag_uart_0.v \
   $QSYS_SIMDIR/submodules/system_onchip_memory2_0.v \
   $QSYS_SIMDIR/submodules/system_nios2_qsys_0.v \

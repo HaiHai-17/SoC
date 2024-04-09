@@ -1,0 +1,24 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\SoC\bai9\bai92\software\bai92\obj\default\runtime\sim\mentor
+vsystem_onchip_memory2_0
+!i10b 1
+!s100 KflJK2U2`D[7eWml9=1;R1
+IG<Fk46=Wmho=mXQHA;5Hf3
+Vn[5XfX4e;ezLW9^`]k2QS1
+Z1 dD:\SoC\bai9\bai92\software\bai92\obj\default\runtime\sim\mentor
+w1712632819
+8D:/SoC/bai9/bai92/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v
+FD:/SoC/bai9/bai92/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v
+L0 21
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1712633116.630000
+!s107 D:/SoC/bai9/bai92/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v|
+!s90 -reportprogress|300|D:/SoC/bai9/bai92/system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v|-work|onchip_memory2_0|
+!s101 -O0
+o-work onchip_memory2_0 -O0

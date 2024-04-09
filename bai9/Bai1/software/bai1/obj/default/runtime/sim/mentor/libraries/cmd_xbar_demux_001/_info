@@ -1,0 +1,27 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\BTap\BTap\Tuan8\Bai1\software\bai1\obj\default\runtime\sim\mentor
+vsystemne_cmd_xbar_demux_001
+DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 5P3;UWQHnm3a6e<VGHci33
+IZG^HEIJAbK:ah_2_>^SIz1
+VQPfFA4@E=PJg?EKB0LleB1
+!s105 systemne_cmd_xbar_demux_001_sv_unit
+S1
+Z1 dE:\BTap\BTap\Tuan8\Bai1\software\bai1\obj\default\runtime\sim\mentor
+w1711957401
+8E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_cmd_xbar_demux_001.sv
+FE:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_cmd_xbar_demux_001.sv
+L0 43
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1711960204.821000
+!s107 E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_cmd_xbar_demux_001.sv|
+!s90 -reportprogress|300|-sv|E:/BTap/BTap/Tuan8/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_cmd_xbar_demux_001.sv|-work|cmd_xbar_demux_001|
+!s101 -O0
+o-sv -work cmd_xbar_demux_001 -O0

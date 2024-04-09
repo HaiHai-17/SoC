@@ -1,9 +1,11 @@
 module bai91(
- input CLOCK_50,
- input [0:0] KEY
- );
- system Nios_system (
- .clk_clk (CLOCK_50),
- .reset_reset_n (KEY[0])
- );
+input CLOCK_50,
+input [0:0] KEY
+);
+
+system u0 (
+        .clk_clk       (CLOCK_50),       //   clk.clk
+        .reset_reset_n (KEY[0])  // reset.reset_n
+    );
+
 endmodule

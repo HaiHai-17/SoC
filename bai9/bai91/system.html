@@ -67,7 +67,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </table>
   <table class="blueBar">
    <tr>
-    <td class="l">2024.04.08.10:34:53</td>
+    <td class="l">2024.04.09.10:49:47</td>
     <td class="r">Datasheet</td>
    </tr>
   </table>
@@ -168,7 +168,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    <tr>
     <td class="slaveb">avalon_slave_0&#160;</td>
     <td class="addr"><span style="color:#989898">0x</span>00011000</td>
-    <td class="addr"><span style="color:#989898">0x</span>00011000</td>
+    <td class="empty"></td>
    </tr>
   </table>
   <a name="module_clk_0"> </a>
@@ -230,7 +230,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <a href="#module_clk_0">clk_0</a>
       </td>
       <td class="from">clk&#160;&#160;</td>
-      <td class="main" rowspan="26">nios2_qsys_0</td>
+      <td class="main" rowspan="22">nios2_qsys_0</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;clk</td>
@@ -280,7 +280,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      <tr>
       <td></td>
       <td></td>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+      <td class="from">data_master&#160;&#160;</td>
       <td class="neighbor" rowspan="8">
        <a href="#module_jtag_uart_0">jtag_uart_0</a>
       </td>
@@ -288,7 +288,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      <tr>
       <td></td>
       <td></td>
-      <td class="to">&#160;&#160;reset</td>
+      <td class="to">&#160;&#160;avalon_jtag_slave</td>
      </tr>
      <tr>
       <td></td>
@@ -303,12 +303,12 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      <tr>
       <td></td>
       <td></td>
-      <td class="from">data_master&#160;&#160;</td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
      </tr>
      <tr>
       <td></td>
       <td></td>
-      <td class="to">&#160;&#160;avalon_jtag_slave</td>
+      <td class="to">&#160;&#160;reset</td>
      </tr>
      <tr>
       <td></td>
@@ -327,7 +327,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td></td>
       <td class="from">data_master&#160;&#160;</td>
-      <td class="neighbor" rowspan="6">
+      <td class="neighbor" rowspan="2">
        <a href="#module_Memory_0">Memory_0</a>
       </td>
      </tr>
@@ -335,26 +335,6 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td></td>
       <td class="to">&#160;&#160;avalon_slave_0</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">instruction_master&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;avalon_slave_0</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;reset_sink</td>
      </tr>
     </table>
    </div>
@@ -803,7 +783,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">instSlaveMapParam</td>
-        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='onchip_memory2_0.s1' start='0x8000' end='0x10000' /&gt;&lt;slave name='nios2_qsys_0.jtag_debug_module' start='0x10800' end='0x11000' /&gt;&lt;slave name='Memory_0.avalon_slave_0' start='0x11000' end='0x11040' /&gt;&lt;slave name='jtag_uart_0.avalon_jtag_slave' start='0x11048' end='0x11050' /&gt;&lt;/address-map&gt;</td>
+        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='onchip_memory2_0.s1' start='0x8000' end='0x10000' /&gt;&lt;slave name='nios2_qsys_0.jtag_debug_module' start='0x10800' end='0x11000' /&gt;&lt;slave name='jtag_uart_0.avalon_jtag_slave' start='0x11048' end='0x11050' /&gt;&lt;/address-map&gt;</td>
        </tr>
        <tr>
         <td class="parametername">dataSlaveMapParam</td>
@@ -1213,14 +1193,32 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    <div class="greydiv">
     <table class="connectionboxes">
      <tr>
-      <td class="neighbor" rowspan="8">
-       <a href="#module_nios2_qsys_0">nios2_qsys_0</a>
+      <td class="neighbor" rowspan="4">
+       <a href="#module_clk_0">clk_0</a>
       </td>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+      <td class="from">clk&#160;&#160;</td>
       <td class="main" rowspan="13">jtag_uart_0</td>
      </tr>
      <tr>
+      <td class="to">&#160;&#160;clk</td>
+     </tr>
+     <tr>
+      <td class="from">clk_reset&#160;&#160;</td>
+     </tr>
+     <tr>
       <td class="to">&#160;&#160;reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="8">
+       <a href="#module_nios2_qsys_0">nios2_qsys_0</a>
+      </td>
+      <td class="from">data_master&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;avalon_jtag_slave</td>
      </tr>
      <tr>
       <td class="from">instruction_master&#160;&#160;</td>
@@ -1229,34 +1227,16 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td class="to">&#160;&#160;avalon_jtag_slave</td>
      </tr>
      <tr>
-      <td class="from">data_master&#160;&#160;</td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
      </tr>
      <tr>
-      <td class="to">&#160;&#160;avalon_jtag_slave</td>
+      <td class="to">&#160;&#160;reset</td>
      </tr>
      <tr>
       <td class="from">d_irq&#160;&#160;</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;irq</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="4">
-       <a href="#module_clk_0">clk_0</a>
-      </td>
-      <td class="from">clk_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;reset</td>
-     </tr>
-     <tr>
-      <td class="from">clk&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clk</td>
      </tr>
     </table>
    </div>
@@ -1376,41 +1356,29 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td class="neighbor" rowspan="4">
        <a href="#module_clk_0">clk_0</a>
       </td>
-      <td class="from">clk_reset&#160;&#160;</td>
-      <td class="main" rowspan="11">Memory_0</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;reset_sink</td>
-     </tr>
-     <tr>
       <td class="from">clk&#160;&#160;</td>
+      <td class="main" rowspan="7">Memory_0</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;clock_sink</td>
+     </tr>
+     <tr>
+      <td class="from">clk_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;reset_sink</td>
      </tr>
      <tr style="height:6px">
       <td></td>
      </tr>
      <tr>
-      <td class="neighbor" rowspan="6">
+      <td class="neighbor" rowspan="2">
        <a href="#module_nios2_qsys_0">nios2_qsys_0</a>
       </td>
       <td class="from">data_master&#160;&#160;</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;avalon_slave_0</td>
-     </tr>
-     <tr>
-      <td class="from">instruction_master&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;avalon_slave_0</td>
-     </tr>
-     <tr>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;reset_sink</td>
      </tr>
     </table>
    </div>
@@ -1455,7 +1423,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   <table class="blueBar">
    <tr>
     <td class="l">generation took 0.00 seconds</td>
-    <td class="r">rendering took 0.04 seconds</td>
+    <td class="r">rendering took 0.05 seconds</td>
    </tr>
   </table>
  </body>

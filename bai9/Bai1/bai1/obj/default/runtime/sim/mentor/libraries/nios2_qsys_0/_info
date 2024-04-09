@@ -1,0 +1,499 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\SoC\bai9\Bai1\bai1\obj\default\runtime\sim\mentor
+vsystemne_nios2_qsys_0
+Iehc<f<YTA5WeNm:>Moca;2
+VXln;@HdJRi]gMXF`RVO5H1
+Z1 dD:\SoC\bai9\Bai1\bai1\obj\default\runtime\sim\mentor
+Z2 w1711957400
+Z3 8D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0.v
+Z4 FD:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0.v
+L0 3129
+Z5 OV;L;10.1d;51
+r1
+31
+Z6 !s108 1712631545.452000
+Z7 !s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0.v|
+Z8 !s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0.v|-work|nios2_qsys_0|
+Z9 o-work nios2_qsys_0 -O0
+!i10b 1
+!s100 =>LT?NBQgA?7`l306H@oM0
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_jtag_debug_module_sysclk
+ILhmb4^Z7:JzVEO7@9FW8N1
+VJ`OBPOaL6B8[GaRka]2X60
+R1
+R2
+8D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_sysclk.v
+FD:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_sysclk.v
+L0 21
+R5
+r1
+31
+R9
+!i10b 1
+!s100 :c_2>XD]@F=ZIiM[fm@Zn1
+!s85 0
+!s108 1712631547.260000
+!s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_sysclk.v|
+!s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_sysclk.v|-work|nios2_qsys_0|
+!s101 -O0
+vsystemne_nios2_qsys_0_jtag_debug_module_tck
+I6e10=aLen_c=[WdC0C9@70
+VezM^zeL5HBz[L`?C5Ki@c2
+R1
+R2
+8D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_tck.v
+FD:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_tck.v
+L0 21
+R5
+r1
+31
+R9
+!i10b 1
+!s100 Zc>T;H[<F1Y9VXPj64W7f1
+!s85 0
+!s108 1712631547.408000
+!s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_tck.v|
+!s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_tck.v|-work|nios2_qsys_0|
+!s101 -O0
+vsystemne_nios2_qsys_0_jtag_debug_module_wrapper
+IGSJoUQ3Q9RUV=cf7dX_H20
+VWi[Iz[QI<UkUSNjaAeCG^1
+R1
+R2
+8D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_wrapper.v
+FD:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_wrapper.v
+L0 21
+R5
+r1
+31
+R9
+!i10b 1
+!s100 dHK:0[b]F[UQG<PZ7YYA`1
+!s85 0
+!s108 1712631547.536000
+!s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_wrapper.v|
+!s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_wrapper.v|-work|nios2_qsys_0|
+!s101 -O0
+vsystemne_nios2_qsys_0_nios2_avalon_reg
+Ia@1D]Y63<N6U>C1^FSgJj0
+VKkV0df9<VWz0XHl<JQ3TF1
+R1
+R2
+R3
+R4
+L0 524
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 Q`O>4^aVc]BFbzXCLN^zQ3
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_nios2_oci
+I@fMVHGRU@k6jE@CP4Phc=0
+VTCKD467GoP2<QaX>@_5<g2
+R1
+R2
+R3
+R4
+L0 2624
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 52h8H=^153MmhFT;7IG7<1
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_nios2_oci_break
+ICW63EWhh_oEKKlF6ckkM81
+Vgc;LoR5>m;OhN9I=F>;9o3
+R1
+R2
+R3
+R4
+L0 616
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 ]zk<>7cMfZfBU`Zl5SD8Y2
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_nios2_oci_compute_tm_count
+IABZdk@CRYciQN=[QimIQM0
+VMb1Mh_0lD9DfhNklE]7h=1
+R1
+R2
+R3
+R4
+L0 1760
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 Y_n^16Q^clOkmc93KHQ6?3
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_nios2_oci_dbrk
+IU3zO_kHhE=TTZgWNZ`lX50
+VVTDYQSd_PIeBVWFi8=jJZ0
+R1
+R2
+R3
+R4
+L0 1116
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 2ziLZTjd]MEMZK5QnYR>h3
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_nios2_oci_debug
+IHzzl<f<<1o=fZ_EgNLEo31
+VTfIXN?O6baSE<e4@7kc^K2
+R1
+R2
+R3
+R4
+L0 147
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 hf^QFYANL<LU]i>lm_Tn:2
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_nios2_oci_dtrace
+Ihaa^e[[iT3T=dbCaP2S`G2
+VE2LEMIG`8G]A<GaFL<g4l0
+R1
+R2
+R3
+R4
+L0 1666
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 B>7j]m=QNi<gWka7L>a?60
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_nios2_oci_fifo
+IAflDze4h4Gc]EW9k@GkLe3
+VBD^ac>ocQ:Ml2>mzePcRi1
+R1
+R2
+R3
+R4
+L0 1919
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 ^B?_`Cie6WDK5:>S]Uc:d0
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_nios2_oci_fifocount_inc
+IW8g12WKh?Ooa;1imNdNM93
+VeP2C7Ll]Dzjo4XAFTWHAd0
+R1
+R2
+R3
+R4
+L0 1873
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 cJFlgj;M9Oo]7XX77mzVV2
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_nios2_oci_fifowp_inc
+IQa]QZ?A`ZO`CDWlYil2HB2
+Vz_Q2VK_T:1IPn]h[?`>cD2
+R1
+R2
+R3
+R4
+L0 1831
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 U3gnA?@HU`D^CY1SJXzh=3
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_nios2_oci_im
+I9ge9B:dQ@hBJD@FDoKXX_3
+VDhZkKQA^BWmcP>Dk:>TC<2
+R1
+R2
+R3
+R4
+L0 2492
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 ?gLd??XQm[m;Cb=kTQKIQ0
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_nios2_oci_itrace
+IS<dCo]n<6_`OkQf@DA<aj1
+VhDz[n_c013a^;n>Omgfe40
+R1
+R2
+R3
+R4
+L0 1302
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 cC9n?cZm[Q<l?kbhCc4<k1
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_nios2_oci_pib
+IUNg]lTK[L`1RS83DOI2B52
+V]h0Vbem@UBX2beKj6SlO_1
+R1
+R2
+R3
+R4
+L0 2424
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 h;Eklj8C@<8`8J_gZKL@]2
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_nios2_oci_td_mode
+If2Dh0>]:Ed5YI21XU80G01
+V4F^dOBX7^b2z:NDYX20^c0
+R1
+R2
+R3
+R4
+L0 1599
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 R[Vk^HM]_o2;UGVMcCmQG0
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_nios2_oci_xbrk
+IaG[PWX:8=SU7QP?2JRMjd0
+VWl1EL0ZCS5JRWm[7J8;RX1
+R1
+R2
+R3
+R4
+L0 910
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 Rn6DQiedWeMgbkM<DZ3Nz1
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_nios2_ocimem
+IO<E3g9OS88X64Qk[=k]I?2
+VZGUCDhbJ2[icimE5mQom`3
+R1
+R2
+R3
+R4
+L0 346
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 H>gC;l6_g`hCYZ<imEQ`>1
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_nios2_performance_monitors
+IKDc145;UQg6Gc]CA8OLDL0
+V9`CDN5H;jlG7OWgRM8IY]1
+R1
+R2
+R3
+R4
+L0 2608
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 fG7^;]LIKfE_D>cW4CV8S3
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_oci_test_bench
+Idj^1dKYeOzk>aIAlE1@P?2
+V2;]33hTn[>YDRN68EIT980
+R1
+R2
+8D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_oci_test_bench.v
+FD:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_oci_test_bench.v
+L0 21
+R5
+r1
+31
+R9
+!i10b 1
+!s100 Vb=YjX_<gUEPR2B_lYXe91
+!s85 0
+!s108 1712631547.748000
+!s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_oci_test_bench.v|
+!s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_oci_test_bench.v|-work|nios2_qsys_0|
+!s101 -O0
+vsystemne_nios2_qsys_0_ociram_sp_ram_module
+I3<=[TlFM]zRQEbF1cBFMD2
+VE4RkgST1D1=L6gF0dBz;H0
+R1
+R2
+R3
+R4
+L0 288
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 zNFWP:jY4_8JDNk?jE7^=2
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_register_bank_a_module
+I6hRSh`OHRXfB7QY>ePd^[0
+V;:jlYBFIUC9CUL1L7@XF93
+R1
+R2
+R3
+R4
+L0 21
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 ckL[oZB<CPaVV5iM9L1>j0
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_register_bank_b_module
+IkkdNef3HG@BJZeO@TnYUz3
+V1I5f;cW:D<jFMFk]HMl5A0
+R1
+R2
+R3
+R4
+L0 84
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s100 ]Il6m?JRUHH9W2ZV41KfQ3
+!s85 0
+!s101 -O0
+vsystemne_nios2_qsys_0_test_bench
+!i10b 1
+!s100 ;C_aYRLB2DQL4>VzLe9^V1
+IGi3F6`9f_:nZUz9YE>_N<3
+V`<[OmK1mO7zbO[eXY<ToG0
+R1
+R2
+8D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_test_bench.v
+FD:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_test_bench.v
+L0 21
+R5
+r1
+!s85 0
+31
+!s108 1712631547.909000
+!s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_test_bench.v|
+!s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_test_bench.v|-work|nios2_qsys_0|
+!s101 -O0
+R9

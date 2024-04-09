@@ -1,0 +1,49 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\SoC\bai9\Bai1\bai1\obj\default\runtime\sim\mentor
+vsystemne_addr_router
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 EkdG:?BSb=mZA^W9552GM0
+Ico:1zSA<en<^]6PV1>W^V3
+VV>:=m0FOFI9bTTRz2U=823
+Z2 !s105 systemne_addr_router_sv_unit
+S1
+Z3 dD:\SoC\bai9\Bai1\bai1\obj\default\runtime\sim\mentor
+Z4 w1711957401
+Z5 8D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_addr_router.sv
+Z6 FD:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_addr_router.sv
+L0 86
+Z7 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z8 !s108 1712631543.378000
+Z9 !s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_addr_router.sv|
+Z10 !s90 -reportprogress|300|-sv|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_addr_router.sv|-work|addr_router|
+!s101 -O0
+Z11 o-sv -work addr_router -O0
+vsystemne_addr_router_default_decode
+R1
+!i10b 1
+!s100 FI]?X3CY9ITKdcjaeAaaO0
+Ig^BXdThffQmR6z9c5[d[o1
+V:a;GbYQ9GeQhTNQCFg:H<3
+R2
+S1
+R3
+R4
+R5
+R6
+L0 45
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+R11

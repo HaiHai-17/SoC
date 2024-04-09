@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_jtag_uart_0.v"
+   type="VERILOG"
+   library="jtag_uart_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.sdc"
+   type="SDC"
+   library="nios2_qsys_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0.v"
+   type="VERILOG"
+   library="nios2_qsys_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0_jtag_debug_module_sysclk.v"
+   type="VERILOG"
+   library="nios2_qsys_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0_jtag_debug_module_tck.v"
+   type="VERILOG"
+   library="nios2_qsys_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0_jtag_debug_module_wrapper.v"
+   type="VERILOG"
+   library="nios2_qsys_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0_nios2_waves.do"
+   type="OTHER"
+   library="nios2_qsys_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0_ociram_default_contents.dat"
+   type="DAT"
+   library="nios2_qsys_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0_ociram_default_contents.hex"
+   type="HEX"
+   library="nios2_qsys_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0_ociram_default_contents.mif"
+   type="MIF"
+   library="nios2_qsys_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0_oci_test_bench.v"
+   type="VERILOG"
+   library="nios2_qsys_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0_rf_ram_a.dat"
+   type="DAT"
+   library="nios2_qsys_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0_rf_ram_a.hex"
+   type="HEX"
+   library="nios2_qsys_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0_rf_ram_a.mif"
+   type="MIF"
+   library="nios2_qsys_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0_rf_ram_b.dat"
+   type="DAT"
+   library="nios2_qsys_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0_rf_ram_b.hex"
+   type="HEX"
+   library="nios2_qsys_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0_rf_ram_b.mif"
+   type="MIF"
+   library="nios2_qsys_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_nios2_qsys_0_test_bench.v"
+   type="VERILOG"
+   library="nios2_qsys_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.hex"
+   type="HEX"
+   library="onchip_memory2_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system_onchip_memory2_0.v"
+   type="VERILOG"
+   library="onchip_memory2_0" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/verbosity_pkg.sv"
+   type="SYSTEM_VERILOG"
+   library="system_inst_reset_bfm" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/altera_avalon_reset_source.sv"
+   type="SYSTEM_VERILOG"
+   library="system_inst_reset_bfm" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/verbosity_pkg.sv"
+   type="SYSTEM_VERILOG"
+   library="system_inst_clk_bfm" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/altera_avalon_clock_source.sv"
+   type="SYSTEM_VERILOG"
+   library="system_inst_clk_bfm" />
+ <file
+   path="system/testbench/system_tb/simulation/submodules/system.v"
+   type="VERILOG"
+   library="system_inst" />
+ <file
+   path="system/testbench/system_tb/simulation/system_tb.v"
+   type="VERILOG" />
+ <topLevel name="system_tb" />
+ <deviceFamily name="cycloneive" />
+ <modelMap
+   controllerPath="system_tb.system_inst.onchip_memory2_0"
+   modelPath="system_tb.system_inst.onchip_memory2_0" />
+</simPackage>

@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\SoC\bai9\bai92\software\bai92\obj\default\runtime\sim\mentor
+vMemory
+!i10b 1
+!s100 O?L5>T?]:l4CIMbOkkJR^1
+II;RNZ<d2gSgCLzcRj1GSo1
+VOkjiTVCeO_Y[==E4IWfCX3
+Z1 dD:\SoC\bai9\bai92\software\bai92\obj\default\runtime\sim\mentor
+w1712632819
+8D:/SoC/bai9/bai92/system/testbench/system_tb/simulation/submodules/Memory.v
+FD:/SoC/bai9/bai92/system/testbench/system_tb/simulation/submodules/Memory.v
+L0 1
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1712633116.079000
+!s107 D:/SoC/bai9/bai92/system/testbench/system_tb/simulation/submodules/Memory.v|
+!s90 -reportprogress|300|D:/SoC/bai9/bai92/system/testbench/system_tb/simulation/submodules/Memory.v|-work|Memory_0|
+!s101 -O0
+o-work Memory_0 -O0
+n@memory

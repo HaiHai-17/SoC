@@ -1,0 +1,24 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\SoC\bai9\Bai1\bai1\obj\default\runtime\sim\mentor
+vsystemne
+!i10b 1
+!s100 Dk[@0z3eDCTU4Uih@Kaif3
+I@>D1^N7^>@0dB8AU>426I0
+V5fPBW[@n8]MO5_<:H`5k[0
+Z1 dD:\SoC\bai9\Bai1\bai1\obj\default\runtime\sim\mentor
+w1711957395
+8D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne.v
+FD:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne.v
+L0 6
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1712631548.380000
+!s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne.v|
+!s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne.v|-work|systemne_inst|
+!s101 -O0
+o-work systemne_inst -O0
