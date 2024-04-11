@@ -20,7 +20,7 @@ Z2 OV;L;10.1d;51
 r1
 !s85 0
 31
-!s108 1712633115.833000
+!s108 1712817718.157000
 !s107 D:/SoC/bai9/bai92/system/testbench/system_tb/simulation/submodules/altera_merlin_master_translator.sv|
 !s90 -reportprogress|300|-sv|D:/SoC/bai9/bai92/system/testbench/system_tb/simulation/submodules/altera_merlin_master_translator.sv|-work|nios2_qsys_0_instruction_master_translator|
 !s101 -O0

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Apr 11 15:15:11 2024
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : vd1
+Top-level Entity Name : vd1
+Family : Cyclone II
+Total logic elements : 517
+    Total combinational functions : 437
+    Dedicated logic registers : 310
+Total registers : 310
+Total pins : 39
+Total virtual pins : 0
+Total memory bits : 8,208
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

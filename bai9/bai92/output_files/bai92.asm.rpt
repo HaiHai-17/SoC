@@ -1,5 +1,5 @@
 Assembler report for bai92
-Tue Apr 09 10:21:59 2024
+Thu Apr 11 13:08:12 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Apr 09 10:21:59 2024 ;
+; Assembler Status      ; Successful - Thu Apr 11 13:08:12 2024 ;
 ; Revision Name         ; bai92                                 ;
 ; Top-level Entity Name ; bai92                                 ;
 ; Family                ; Cyclone IV E                          ;
@@ -103,8 +103,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                           ;
 +----------------+---------------------------------------------------+
 ; Device         ; EP4CE115F29C8                                     ;
-; JTAG usercode  ; 0x006BF525                                        ;
-; Checksum       ; 0x006BF525                                        ;
+; JTAG usercode  ; 0x006B8E4C                                        ;
+; Checksum       ; 0x006B8E4C                                        ;
 +----------------+---------------------------------------------------+
 
 
@@ -114,14 +114,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Apr 09 10:21:53 2024
+    Info: Processing started: Thu Apr 11 13:08:06 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off bai92 -c bai92
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4599 megabytes
-    Info: Processing ended: Tue Apr 09 10:21:59 2024
+    Info: Processing ended: Thu Apr 11 13:08:12 2024
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 

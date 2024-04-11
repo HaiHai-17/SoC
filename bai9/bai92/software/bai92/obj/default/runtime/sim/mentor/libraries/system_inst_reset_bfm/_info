@@ -21,7 +21,7 @@ Z4 OV;L;10.1d;51
 r1
 !s85 0
 31
-!s108 1712633119.427000
+!s108 1712817722.068000
 !s107 D:/SoC/bai9/bai92/system/testbench/system_tb/simulation/submodules/altera_avalon_reset_source.sv|
 !s90 -reportprogress|300|-sv|D:/SoC/bai9/bai92/system/testbench/system_tb/simulation/submodules/altera_avalon_reset_source.sv|-L|altera_avalon_vip_pkgs_lib|-work|system_inst_reset_bfm|
 !s101 -O0

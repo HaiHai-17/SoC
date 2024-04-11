@@ -7,14 +7,14 @@ vsystemne_nios2_qsys_0
 Iehc<f<YTA5WeNm:>Moca;2
 VXln;@HdJRi]gMXF`RVO5H1
 Z1 dD:\SoC\bai9\Bai1\bai1\obj\default\runtime\sim\mentor
-Z2 w1711957400
+Z2 w1712632715
 Z3 8D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0.v
 Z4 FD:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0.v
 L0 3129
 Z5 OV;L;10.1d;51
 r1
 31
-Z6 !s108 1712631545.452000
+Z6 !s108 1712816405.562000
 Z7 !s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0.v|
 Z8 !s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0.v|-work|nios2_qsys_0|
 Z9 o-work nios2_qsys_0 -O0
@@ -37,7 +37,7 @@ R9
 !i10b 1
 !s100 :c_2>XD]@F=ZIiM[fm@Zn1
 !s85 0
-!s108 1712631547.260000
+!s108 1712816407.335000
 !s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_sysclk.v|
 !s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_sysclk.v|-work|nios2_qsys_0|
 !s101 -O0
@@ -56,7 +56,7 @@ R9
 !i10b 1
 !s100 Zc>T;H[<F1Y9VXPj64W7f1
 !s85 0
-!s108 1712631547.408000
+!s108 1712816407.753000
 !s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_tck.v|
 !s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_tck.v|-work|nios2_qsys_0|
 !s101 -O0
@@ -75,7 +75,7 @@ R9
 !i10b 1
 !s100 dHK:0[b]F[UQG<PZ7YYA`1
 !s85 0
-!s108 1712631547.536000
+!s108 1712816407.883000
 !s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_wrapper.v|
 !s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_jtag_debug_module_wrapper.v|-work|nios2_qsys_0|
 !s101 -O0
@@ -417,7 +417,7 @@ R9
 !i10b 1
 !s100 Vb=YjX_<gUEPR2B_lYXe91
 !s85 0
-!s108 1712631547.748000
+!s108 1712816408.093000
 !s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_oci_test_bench.v|
 !s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_oci_test_bench.v|-work|nios2_qsys_0|
 !s101 -O0
@@ -492,7 +492,7 @@ R5
 r1
 !s85 0
 31
-!s108 1712631547.909000
+!s108 1712816408.263000
 !s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_test_bench.v|
 !s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_nios2_qsys_0_test_bench.v|-work|nios2_qsys_0|
 !s101 -O0

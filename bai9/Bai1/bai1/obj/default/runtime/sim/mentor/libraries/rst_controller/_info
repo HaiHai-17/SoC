@@ -7,7 +7,7 @@ valtera_reset_controller
 I2]LFV0fiJY6;JZZ<3`@lh2
 VBWWT<i0A@QcN4KE]hBS<V0
 Z1 dD:\SoC\bai9\Bai1\bai1\obj\default\runtime\sim\mentor
-Z2 w1711957401
+Z2 w1712632716
 8D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_reset_controller.v
 FD:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_reset_controller.v
 L0 29
@@ -18,7 +18,7 @@ Z4 o-work rst_controller -O0
 !i10b 1
 !s100 eK:BQULHF7li=gS`[EDjh1
 !s85 0
-!s108 1712631542.523000
+!s108 1712816402.371000
 !s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_reset_controller.v|
 !s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_reset_controller.v|-work|rst_controller|
 !s101 -O0
@@ -36,7 +36,7 @@ R3
 r1
 !s85 0
 31
-!s108 1712631542.653000
+!s108 1712816402.521000
 !s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_reset_synchronizer.v|
 !s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/altera_reset_synchronizer.v|-work|rst_controller|
 !s101 -O0

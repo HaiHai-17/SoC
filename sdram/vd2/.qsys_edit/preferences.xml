@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="159" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="311" />
+   <clocksource preferredWidth="311" />
+   <frequency preferredWidth="291" />
+  </columns>
+ </clocktable>
+ <window width="1297" height="862" x="263" y="127" />
+ <library
+   expandedCategories="Library/Verification,Library/Embedded Processors,Library/Verification/Debug &amp; Performance,Project,Library/Peripherals,Library/Peripherals/Debug and Performance,Library" />
+</preferences>

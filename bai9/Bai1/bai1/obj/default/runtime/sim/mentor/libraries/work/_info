@@ -5,20 +5,20 @@ cModel Technology
 Z0 dD:\SoC\bai9\Bai1\bai1\obj\default\runtime\sim\mentor
 vsystemne_tb
 !i10b 1
-!s100 S6gY3A1^cdkECX0c652K_2
-I8X0N0L;X8`IGgQFcAf]HT1
-VlkT3>Wi;ZJlH6gTE<Mhf>0
-Z1 dD:\SoC\bai9\Bai1\bai1\obj\default\runtime\sim\mentor
-w1711957393
-8D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/systemne_tb.v
-FD:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/systemne_tb.v
+Z1 !s100 S6gY3A1^cdkECX0c652K_2
+Z2 I8X0N0L;X8`IGgQFcAf]HT1
+Z3 VlkT3>Wi;ZJlH6gTE<Mhf>0
+Z4 dD:\SoC\bai9\Bai1\bai1\obj\default\runtime\sim\mentor
+w1712632707
+Z5 8D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/systemne_tb.v
+Z6 FD:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/systemne_tb.v
 L0 6
-OV;L;10.1d;51
+Z7 OV;L;10.1d;51
 r1
 !s85 0
 31
-!s108 1712631548.562000
+!s108 1712816409.023000
 !s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/systemne_tb.v|
-!s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/systemne_tb.v|
+Z8 !s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/systemne_tb.v|
 !s101 -O0
 o-O0

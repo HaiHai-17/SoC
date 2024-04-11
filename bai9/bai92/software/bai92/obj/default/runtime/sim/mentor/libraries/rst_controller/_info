@@ -18,7 +18,7 @@ Z4 o-work rst_controller -O0
 !i10b 1
 !s100 U<Jmi2TeSgCzjMI]_gYF@0
 !s85 0
-!s108 1712633113.800000
+!s108 1712817715.904000
 !s107 D:/SoC/bai9/bai92/system/testbench/system_tb/simulation/submodules/altera_reset_controller.v|
 !s90 -reportprogress|300|D:/SoC/bai9/bai92/system/testbench/system_tb/simulation/submodules/altera_reset_controller.v|-work|rst_controller|
 !s101 -O0
@@ -36,7 +36,7 @@ R3
 r1
 !s85 0
 31
-!s108 1712633113.944000
+!s108 1712817716.056000
 !s107 D:/SoC/bai9/bai92/system/testbench/system_tb/simulation/submodules/altera_reset_synchronizer.v|
 !s90 -reportprogress|300|D:/SoC/bai9/bai92/system/testbench/system_tb/simulation/submodules/altera_reset_synchronizer.v|-work|rst_controller|
 !s101 -O0

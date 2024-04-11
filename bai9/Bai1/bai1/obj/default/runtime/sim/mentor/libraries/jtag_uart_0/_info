@@ -9,7 +9,7 @@ vsystemne_jtag_uart_0
 I9Lk^>3gF5_>@5W1aFIP4m2
 V65ze:VhcJEVH^La^93Djh1
 Z1 dD:\SoC\bai9\Bai1\bai1\obj\default\runtime\sim\mentor
-Z2 w1711957401
+Z2 w1712632716
 Z3 8D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_jtag_uart_0.v
 Z4 FD:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_jtag_uart_0.v
 L0 327
@@ -17,7 +17,7 @@ Z5 OV;L;10.1d;51
 r1
 !s85 0
 31
-Z6 !s108 1712631544.813000
+Z6 !s108 1712816405.092000
 Z7 !s107 D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_jtag_uart_0.v|
 Z8 !s90 -reportprogress|300|D:/SoC/bai9/Bai1/systemne/testbench/systemne_tb/simulation/submodules/systemne_jtag_uart_0.v|-work|jtag_uart_0|
 !s101 -O0

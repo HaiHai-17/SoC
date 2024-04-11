@@ -4305,7 +4305,7 @@ int alt_get_fd (alt_dev* dev)
     a450:	20000726 	beq	r4,zero,a470 <__call_exitprocs+0x1a0>
     a454:	b9000015 	stw	r4,0(r23)
     a458:	8809883a 	mov	r4,r17
-    a45c:	00000000 	call	0 <__alt_mem_onchip_memory2_0-0x8000>
+    a45c:	00000000 	call	0 <__reset-0x8000>
     a460:	bc400017 	ldw	r17,0(r23)
     a464:	883fb71e 	bne	r17,zero,a344 <__call_exitprocs+0x74>
     a468:	003fc506 	br	a380 <__call_exitprocs+0xb0>

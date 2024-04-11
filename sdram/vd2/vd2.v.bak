@@ -1,0 +1,36 @@
+module vd2(
+input CLOCK_50,
+output [17:0]SRAM_ADDR,
+output SRAM_BA_1, SRAM_BA_0, SRAM_CAS_N, SRAM_RAS_N, SRAM_CLK,
+output SRAM_CKE, SRAM_CS_N, SRAM_WE_N, SRAM_UDQM, SRAM_LDQM,
+inout [15:0]SRAM_DQ,
+output [11:0]SDRAM_ADDR,
+output SDRAM_BA_1,SDRAM_BA_0,SDRAM_CAS_N,SDRAM_RAS_N,SDRAM_CLK,
+output SDRAM_CKE,SDRAM_CS_N,SDRAM_WE_N,SDRAM_UDQM,SDRAM_LDQM,
+inout [15:0]DRAM_DQ
+);
+
+system u0 (
+        .clk_clk           (CLOCK_50),           //         clk.clk
+        .sSRAM_wire_addr  (SRAM_ADDR),  // sSRAM_wire.addr
+        .sSRAM_wire_ba    ({SRAM_BA_1,SRAM_BA_0}),    //            .ba
+        .sSRAM_wire_cas_n (SRAM_CAS_N), //            .cas_n
+        .sSRAM_wire_cke   (SRAM_CKE),   //            .cke
+        .sSRAM_wire_cs_n  (SRAM_CS_N),  //            .cs_n
+        .sSRAM_wire_dq    (SRAM_DQ),    //            .dq
+        .sSRAM_wire_dqm   ({SRAM_UDQM,SRAM_LDQM}),   //            .dqm
+        .sSRAM_wire_ras_n (SRAM_RAS_N), //            .ras_n
+        .sSRAM_wire_we_n  (SRAM_WE_N),  //            .we_n
+        .sSDRAM_wire_addr  (SDRAM_ADDR),  // sSDRAM_wire.addr
+        .sSDRAM_wire_ba    ({SDRAM_BA_1,SDRAM_BA_0}),    //            .ba
+        .sSDRAM_wire_cas_n (SDRAM_CAS_N), //            .cas_n
+        .sSDRAM_wire_cke   (SDRAM_CKE),   //            .cke
+        .sSDRAM_wire_cs_n  (SDRAM_CS_N),  //            .cs_n
+        .sSDRAM_wire_dq    (SDRAM_DQ),    //            .dq
+        .sSDRAM_wire_dqm   ({SDRAM_UDQM,SDRAM_LDQM}),   //            .dqm
+        .sSDRAM_wire_ras_n (SDRAM_RAS_N), //            .ras_n
+        .sSDRAM_wire_we_n  (SDRAM_WE_N),  //            .we_n
+        .altpll_0_c1_clk   (SDRAM_CLK)    // altpll_0_c1.clk
+    );
+
+endmodule
