@@ -1,0 +1,454 @@
+/* 
+ * "Small Hello World" example. 
+ * 
+ * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
+ * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example 
+ * designs. It requires a STDOUT  device in your system's hardware. 
+ *
+ * The purpose of this example is to demonstrate the smallest possible Hello 
+ * World application, using the Nios II HAL library.  The memory footprint
+ * of this hosted application is ~332 bytes by default using the standard 
+ * reference design.  For a more fully featured Hello World application
+ * example, see the example titled "Hello World".
+ *
+ * The memory footprint of this example has been reduced by making the
+ * following changes to the normal "Hello World" example.
+ * Check in the Nios II Software Developers Manual for a more complete 
+ * description.
+ * 
+ * In the SW Application project (small_hello_world):
+ *
+ *  - In the C/C++ Build page
+ * 
+ *    - Set the Optimization Level to -Os
+ * 
+ * In System Library project (small_hello_world_syslib):
+ *  - In the C/C++ Build page
+ * 
+ *    - Set the Optimization Level to -Os
+ * 
+ *    - Define the preprocessor option ALT_NO_INSTRUCTION_EMULATION 
+ *      This removes software exception handling, which means that you cannot 
+ *      run code compiled for Nios II cpu with a hardware multiplier on a core 
+ *      without a the multiply unit. Check the Nios II Software Developers 
+ *      Manual for more details.
+ *
+ *  - In the System Library page:
+ *    - Set Periodic system timer and Timestamp timer to none
+ *      This prevents the automatic inclusion of the timer driver.
+ *
+ *    - Set Max file descriptors to 4
+ *      This reduces the size of the file handle pool.
+ *
+ *    - Check Main function does not exit
+ *    - Uncheck Clean exit (flush buffers)
+ *      This removes the unneeded call to exit when main returns, since it
+ *      won't.
+ *
+ *    - Check Don't use C++
+ *      This builds without the C++ support code.
+ *
+ *    - Check Small C library
+ *      This uses a reduced functionality C library, which lacks  
+ *      support for buffering, file IO, floating point and getch(), etc. 
+ *      Check the Nios II Software Developers Manual for a complete list.
+ *
+ *    - Check Reduced device drivers
+ *      This uses reduced functionality drivers if they're available. For the
+ *      standard design this means you get polled UART and JTAG UART drivers,
+ *      no support for the LCD driver and you lose the ability to program 
+ *      CFI compliant flash devices.
+ *
+ *    - Check Access device drivers directly
+ *      This bypasses the device file system to access device drivers directly.
+ *      This eliminates the space required for the device file system services.
+ *      It also provides a HAL version of libc services that access the drivers
+ *      directly, further reducing space. Only a limited number of libc
+ *      functions are available in this configuration.
+ *
+ *    - Use ALT versions of stdio routines:
+ *
+ *           Function                  Description
+ *        ===============  =====================================
+ *        alt_printf       Only supports %s, %x, and %c ( < 1 Kbyte)
+ *        alt_putstr       Smaller overhead than puts with direct drivers
+ *                         Note this function doesn't add a newline.
+ *        alt_putchar      Smaller overhead than putchar with direct drivers
+ *        alt_getchar      Smaller overhead than getchar with direct drivers
+ *
+ */
+
+#include "sys/alt_stdio.h"
+#include <stdio.h>
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+#include "io.h"
+#include "altera_avalon_timer_regs.h"
+#include "sys/alt_irq.h"
+#include <string.h>
+
+const unsigned char control  		 = 0x00002;     // Switch 1   : Xac dinh la dong ho chay binh thuong hay la dung lai chinh sua
+const unsigned char date_time        = 0x00004;     // Switch 2   : Chinh thoi gian hay la chinh ngay     (1: Chinh thoi gian            ,  0 : Chinh ngay)
+
+const unsigned char SetTime  		 = 0x00008;     // Switch 3   : Chinh bao thuc hay la chinh dong ho   (1: Chinh dong ho              ,  0 : Chinh bao thuc)
+
+const unsigned char second   		 = 0x00010;     // Switch 4   : Chinh giay dong ho                    (1: Cho phep chinh giay dong ho,  0 : Khong cho phep chinh giay dong ho)
+const unsigned char minute   		 = 0x00020;     // Switch 5   : Chinh phut dong ho                    (1: Cho phep chinh phut dong ho,  0 : Khong cho phep chinh phut dong ho)
+const unsigned char hour     		 = 0x00040;     // Switch 6   : Chinh gio dong ho                     (1: Cho phep chinh gio dong ho ,  0 : Khong cho phep chinh gio dong ho)
+
+const unsigned char SetMinuteArlam   = 0x00100;     // Switch 8   : Chinh phut bao thuc                   (1: Cho phep chinh phut bao thuc, 0 : Khong cho phep chinh phut bao thuc)
+const unsigned char SetHourArlam     = 0x00200;     // Switch 9   : Chinh gio bao thuc                    (1: Cho phep chinh gio bao thuc , 0 : Khong cho phep chinh gio bao thuc)
+
+const unsigned char OnOFF_Arlam      = 0x20000;     // Switch 17  : Bat/Tat bao thuc                      (1: Bat bao thuc                , 0 : Tat bao thuc)
+
+// Khai bao chuoi hex hien thi ra LCD co 16 ky tu va 1 ky tu tat HEX
+const unsigned char SHOW_HEX[17] = {0xC0,0xF9,0xA4,0xB0,0x99,0x92,0x82,0xF8,0x80,0x90,0x88,0x83,0xC6,0xA1,0x86,0x8E, 0xFF};
+char data[10]={'0','1','2','3','4','5','6','7','8','9'};
+
+// Khai bao bien toan cuc gio, phut va giay, ngay thang nam va bien cho phep qua ngay hay chua?
+int hh=0,mm=0,ss=0;
+int next_day = 0;
+
+// Dat mat dinh ngay thang nam truoc khi chay
+int d= 25, m=3 , y=2024;
+
+// Dat thoi gian bao thuc, mac dinh la 5h sang moi ngay
+int hh_SA = 5, mm_SA = 0, ss_SA =0;
+
+// Bien bao thuc
+int clock_alarm = 0;
+
+// Dieu chinh gio hay bao thuc
+int setTime = 1;
+
+// Tao bien nham giam di thoi gian dem
+int cycle=0;
+
+// Ham delay lcd
+void delay(int a)
+{
+	volatile int i=0;
+	while(i<a*10) {i++; }
+}
+
+// Ham gui lenh den LCD
+void command(data)
+{
+	IOWR_ALTERA_AVALON_PIO_DATA(LCD_RS_BASE, 0x00);
+	IOWR_ALTERA_AVALON_PIO_DATA(LCD_RW_BASE, 0x00);
+	IOWR_ALTERA_AVALON_PIO_DATA(LCD_DATA_BASE, data&0xFF);
+	IOWR_ALTERA_AVALON_PIO_DATA(LCD_EN_BASE, 0x01);
+	delay(20);
+	IOWR_ALTERA_AVALON_PIO_DATA(LCD_EN_BASE, 0x00);
+	delay(20);
+}
+
+// Ham gui du lieu
+void lcd_data(char data)
+{
+	IOWR_ALTERA_AVALON_PIO_DATA(LCD_RS_BASE, 0x01);
+	IOWR_ALTERA_AVALON_PIO_DATA(LCD_RW_BASE, 0x00);
+	IOWR_ALTERA_AVALON_PIO_DATA(LCD_DATA_BASE, data&0xFF);
+	IOWR_ALTERA_AVALON_PIO_DATA(LCD_EN_BASE, 0x01);
+	delay(20);
+	IOWR_ALTERA_AVALON_PIO_DATA(LCD_EN_BASE, 0x00);
+	delay(20);
+}
+
+// Ham gui chuoi
+void lcd_string(char *str)
+{
+	char i=0;
+	while(str[i] != 0)
+	{
+		lcd_data(str[i]);
+		i++;
+	}
+}
+
+// Cai dat LCD
+void lcd_init()
+{
+	 command(0x38); delay(100);
+	 command(0x0c); delay(100);
+	 command(0x06); delay(100);
+	 command(0x01);
+}
+
+// Ham kiem tra thoi gian
+void Check_Clock(){
+	if(ss==60){
+		ss=0;
+		mm++;
+		if(mm==60){
+			mm=0;
+			hh++;
+			if(hh==24){
+				hh=0;
+				next_day = 1;
+			}
+		}
+	}
+}
+
+// Ham kiem tra ngay thang nam
+void DayMonthYear(){
+	if(next_day==1){
+		next_day = 0;
+		d++;
+		if(d==32 && (m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12)){
+			d=1;
+			m++;
+			if(m==13){
+				m = 1;
+				y ++;
+			}
+		}else if(d== 31 && (m == 4 || m == 6 || m == 9 || m == 11)){
+			d=1;
+			m++;
+			if(m==13){
+				m = 1;
+				y ++;
+			}
+		}else if(m==2){
+			if(d==30 && y % 4 == 0){
+				d= 1;
+				m++;
+			}else if(d==29 && y % 4 != 0){
+				d= 1;
+				m++;
+			}
+		}
+	}
+}
+
+// Ham xuat ra LCD va console
+void ShowLcd_Console(){
+//	command(0x02);
+	if(clock_alarm==1){
+		printf("\n\t%d:%d:%d \t %d/%d/%d \tBAO THUC", hh, mm, ss, d, m, y);      // Xuat ra console thoi gian hien tai va den gio bao thuc
+	}else{
+		printf("\n\t%d:%d:%d \t %d/%d/%d", hh, mm, ss, d, m, y);      // Xuat ra console thoi gian hien tai
+	}
+	/*-----------------------------------------------------------------------------------------------*/
+	char lcd_out_dmy[16];
+	char lcd_out_smh[16];
+
+	char hhh[2], sss[2], mmm[2];
+	if(hh<10){
+		sprintf(hhh, " %d",hh);
+	}else{
+		sprintf(hhh, "%d",hh);
+	}
+	if(mm<10){
+		sprintf(mmm, " %d",mm);
+	}else{
+		sprintf(mmm, "%d",mm);
+	}
+	if(ss<10){
+		sprintf(sss, " %d",ss);
+	}else{
+		sprintf(sss, "%d",ss);
+	}
+	sprintf(lcd_out_smh, "%s:%s:%s", hhh,mmm,sss);
+	gotoxy(0,0);
+	lcd_string(lcd_out_smh);
+
+
+	char day[2], month[2];
+
+	if(d<10){
+		sprintf(day, " %d", d);
+	}else{
+		sprintf(day, "%d", d);
+	}
+	if(m<10){
+		sprintf(month, " %d", m);
+	}else{
+		sprintf(month, "%d", m);
+	}
+
+	sprintf(lcd_out_dmy, "%s/%s/%d", day,month,y);
+	gotoxy(1,0);
+	lcd_string(lcd_out_dmy);
+	/*-----------------------------------------------------------------------------------------------*/
+
+//	int temp_y2;
+//	int y_1, y_2, y_3, y_4;
+//	y_4 = y % 10;
+//	y_1 = y / 1000;
+//	temp_y2 = y % 1000;
+//	y_2 = temp_y2 / 100;
+//	y_3 = (temp_y2 % 100)/10;
+
+//	lcd_data(data[hh/10]); lcd_data(data[hh%10]); lcd_string(":");
+//	lcd_data(data[mm/10]); lcd_data(data[mm%10]); lcd_string(":");
+//	lcd_data(data[ss/10]); lcd_data(data[ss%10]);
+//	gotoxy(0,0); lcd_string(" ");
+//	lcd_string(lcd_out_dmy);
+//	lcd_data(data[d/10]); lcd_data(data[d%10]); lcd_string("/");
+//	lcd_data(data[m/10]); lcd_data(data[m%10]); lcd_string("/");
+//	lcd_data(data[y_1]); lcd_data(data[y_2]);   lcd_data(data[y_3]);   lcd_data(data[y_4]);
+	//printf("\t%d:%d:%d \t %d/%d/%d\n", hh, mm, ss, d, m, y);
+}
+
+void ShowHex(){
+	ShowLcd_Console();
+
+	if(setTime==1){
+		IOWR(HEX2_BASE,0, SHOW_HEX[ss%10]);         // Hien thi ra hang don vi cua giay
+		if(ss<10){
+			IOWR(HEX3_BASE,0, SHOW_HEX[16]);        // Tat Hex1 do khong dung toi
+		}else{
+			IOWR(HEX3_BASE,0, SHOW_HEX[ss/10]);     // Hien thi ra hang chuc cua giay
+		}
+
+		IOWR(HEX4_BASE,0, SHOW_HEX[mm%10]);         // Hien thi ra hang don vi cua phut
+		if(mm<10){
+			IOWR(HEX5_BASE,0, SHOW_HEX[16]);        // Tat Hex3 do khong dung toi
+		}else{
+			IOWR(HEX5_BASE,0, SHOW_HEX[mm/10]);     // Hien thi ra hang chuc cua phut
+		}
+
+		IOWR(HEX6_BASE,0, SHOW_HEX[hh%10]);         // Hien thi ra hang don vi cua gio
+		if(hh<10){
+			IOWR(HEX7_BASE,0, SHOW_HEX[16]);        // Tat Hex5 do khong dung toi
+		}else{
+			IOWR(HEX7_BASE,0, SHOW_HEX[hh/10]);     // Hien thi ra hang chuc cua gio
+		}
+	}else{
+		IOWR(HEX2_BASE,0, SHOW_HEX[16]);            // Tat giay
+		IOWR(HEX3_BASE,0, SHOW_HEX[16]);
+
+		IOWR(HEX4_BASE,0, SHOW_HEX[mm_SA%10]);      // Hien thi ra hang don vi cua phut
+		if(mm_SA<10){
+			IOWR(HEX5_BASE,0, SHOW_HEX[16]);        // Tat Hex3 do khong dung toi
+		}else{
+			IOWR(HEX5_BASE,0, SHOW_HEX[mm_SA/10]);  // Hien thi ra hang chuc cua phut
+		}
+
+		IOWR(HEX6_BASE,0, SHOW_HEX[hh_SA%10]);      // Hien thi ra hang don vi cua gio
+		if(hh_SA<10){
+			IOWR(HEX7_BASE,0, SHOW_HEX[16]);        // Tat Hex5 do khong dung toi
+		}else{
+			IOWR(HEX7_BASE,0, SHOW_HEX[hh_SA/10]);  // Hien thi ra hang chuc cua gio
+		}
+	}
+
+	if(clock_alarm==1){                             // Neu toi gio bao thuc thi HEX0 On/Off voi chu ky 0.5s
+		IOWR(HEX0_BASE,0, SHOW_HEX[0]);
+		IOWR(HEX1_BASE,0, SHOW_HEX[16]);
+	}else{
+
+		IOWR(HEX0_BASE,0, SHOW_HEX[16]);
+		IOWR(HEX1_BASE,0, SHOW_HEX[16]);
+	}
+
+
+//	IOWR(HEX_0_BASE,0, SHOW_HEX[ss%10]);         // Hien thi ra hang don vi cua giay
+//	IOWR(HEX_1_BASE,0, SHOW_HEX[ss/10]);         // Hien thi ra hang chuc cua giay
+//
+//	IOWR(HEX_2_BASE,0, SHOW_HEX[mm%10]);         // Hien thi ra hang don vi cua phut
+//	IOWR(HEX_3_BASE,0, SHOW_HEX[mm/10]);		 // Hien thi ra hang chuc cua phut
+//
+//	IOWR(HEX_5_BASE,0, SHOW_HEX[16]);  			 // Hien thi ra hang don vi cua gio
+//	IOWR(HEX_5_BASE,0, SHOW_HEX[hh/10]);	     // Hien thi ra hang chuc cua gio
+}
+
+void timer_Init(){
+	unsigned int period = 0;
+	// Dung thanh ghi Timer
+	IOWR_ALTERA_AVALON_TIMER_CONTROL(TIMER_0_BASE, ALTERA_AVALON_TIMER_CONTROL_STOP_MSK);
+	// Dat lai chu ky, CLOCK_50 => 50MHz = 1 chu ky => het 1s = 50MHz
+	// Dem tu 0 den 49999 = 1 chu ky => gia tri = 50000000 - 1
+
+	// Ben canh do co them thoi gian bao thuc chu ky 0.5 => giam di 1 nua thoi gian dem.
+	period = 25000000 - 1;
+	IOWR_ALTERA_AVALON_TIMER_PERIODL(TIMER_0_BASE, period);
+	IOWR_ALTERA_AVALON_TIMER_PERIODH(TIMER_0_BASE, (period >> 16));
+	IOWR_ALTERA_AVALON_TIMER_CONTROL(TIMER_0_BASE,
+			ALTERA_AVALON_TIMER_CONTROL_CONT_MSK  |
+			ALTERA_AVALON_TIMER_CONTROL_ITO_MSK   |
+			ALTERA_AVALON_TIMER_CONTROL_START_MSK );
+}
+
+// Ham kiem tra bao thuc
+void check_alarm(){
+	if(hh==hh_SA && mm==mm_SA && ss <= 15 && IORD(SWITCH_BASE,0) & OnOFF_Arlam) clock_alarm = 1;
+	else clock_alarm = 0;
+}
+
+// Ham xu ly khi co ngat
+void Timer_IRQ_Handler(void* isr_context){
+	IOWR_ALTERA_AVALON_TIMER_STATUS(TIMER_0_BASE, ALTERA_AVALON_TIMER_STATUS_TO_MSK);
+	if(!(IORD(SWITCH_BASE,0) & 0x00002)){
+		setTime=1;
+		cycle++;
+		check_alarm();
+		if(cycle == 2){
+			cycle = 0;
+			ss++;
+			Check_Clock();
+			DayMonthYear();
+			ShowHex();
+		}
+		if(clock_alarm == 1 && cycle == 0){
+			ShowHex();
+		}else if(clock_alarm == 1 && cycle == 1){
+			clock_alarm = 0;
+			ShowHex();
+		}
+	}
+}
+
+int main()
+{ 
+  lcd_init();
+  timer_Init();
+  alt_ic_isr_register(0, TIMER_0_IRQ, Timer_IRQ_Handler, (void*)0, (void*)0);
+  IOWR(HEX0_BASE,0, SHOW_HEX[16]);
+  IOWR(HEX1_BASE,0, SHOW_HEX[16]);
+  alt_putstr("Hello from Nios II!\n");
+  int tempR, tempG;
+  //unsigned const char SetSecondArlam  = 0x000;
+
+  /* Event loop never exits. */
+  while (1){
+		tempR = IORD(SWITCH_BASE, 0);
+		IOWR(LEDR_BASE, 0, tempR);
+		tempG = IORD(KEY_BASE, 0);
+		IOWR(LEDG_BASE, 0, tempG);
+		if(IORD(SWITCH_BASE,0) & control){
+			if(IORD(SWITCH_BASE, 0) & SetTime){
+				setTime=1;
+				ShowHex();
+				if(IORD(KEY_BASE,0)==0x0D && (IORD(SWITCH_BASE,0) & second)){
+					while(IORD(KEY_BASE,0)==0x0D);
+					ss++;
+					if(ss==60) ss=0;
+				} else if(IORD(KEY_BASE,0)==0x0B &&(IORD(SWITCH_BASE,0) & minute)){
+					while(IORD(KEY_BASE,0)==0x0B);
+					mm++;
+					if(mm==60) mm=0;
+				} else if(IORD(KEY_BASE,0)==0x07 && (IORD(SWITCH_BASE,0) & hour )){
+					while(IORD(KEY_BASE,0)==0x07);
+					hh++;
+					if(hh==24) hh=0;
+				}
+			}else{
+				setTime=0;
+				ShowHex();
+				if(IORD(KEY_BASE,0)==0x0B &&(IORD(SWITCH_BASE,0) & SetMinuteArlam)){
+					while(IORD(KEY_BASE,0)==0x0B);
+					mm_SA++;
+					if(mm_SA==60) mm_SA=0;
+				} else if(IORD(KEY_BASE,0)==0x07 && (IORD(SWITCH_BASE,0) & SetHourArlam )){
+					while(IORD(KEY_BASE,0)==0x07);
+					hh_SA++;
+					if(hh_SA==24) hh_SA=0;
+				}
+			}
+		}
+  }
+  return 0;
+}

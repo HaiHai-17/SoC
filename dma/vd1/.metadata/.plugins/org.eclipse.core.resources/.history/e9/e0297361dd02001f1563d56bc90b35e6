@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include "system.h"
+#include "altera_avalon_dma_regs.h"
+#include "sys/alt_irq.h"
+
+// Định nghĩa độ dài dữ liệu
+#define DATA_LENGTH 32
+
+// Khai báo mảng dữ liệu và con trỏ
+short int data_in[DATA_LENGTH];  // Chứa dữ liệu nguồn
+short int data_out[DATA_LENGTH]; // Chứa dữ liệu đích
+
+// Hàm ngắt DMA_ISR_Handler
+void DMA_ISR_Handler(void* isr_context) {
+    // In ra dữ liệu đã chuyển
+	int i;
+    for (i = 0; i < DATA_LENGTH; i++) {
+        printf("Data out[%d] = %d\n", i, data_out[i]);
+    }
+    // Xóa cờ ngắt DMA
+    IOWR_ALTERA_AVALON_DMA_STATUS(DMA_0_BASE, 0);
+}
+
+// Hàm khởi tạo DMA
+void DMA_Init(void) {
+    // Địa chỉ nguồn và đích
+    IOWR_ALTERA_AVALON_DMA_RADDRESS(DMA_0_BASE, (int)data_in);
+    IOWR_ALTERA_AVALON_DMA_WADDRESS(DMA_0_BASE, (int)data_out);
+
+    // Độ dài dữ liệu
+    IOWR_ALTERA_AVALON_DMA_LENGTH(DMA_0_BASE, DATA_LENGTH);
+
+    // Cấu hình và bắt đầu DMA
+    IOWR_ALTERA_AVALON_DMA_CONTROL(DMA_0_BASE,
+                                    ALTERA_AVALON_DMA_CONTROL_WORD_MSK | // Chế độ word transfer
+                                    ALTERA_AVALON_DMA_CONTROL_LEEN_MSK | // Bật chế độ little-endian
+                                    ALTERA_AVALON_DMA_CONTROL_I_EN_MSK | // Bật ngắt sau khi hoàn thành
+                                    ALTERA_AVALON_DMA_CONTROL_GO_MSK);   // Bắt đầu chuyển đổi
+}
+
+// Hàm main
+int main(void) {
+    // Khởi tạo DMA
+    DMA_Init();
+
+    // Đăng ký hàm ngắt DMA_ISR_Handler
+    alt_ic_isr_register(0, DMA_0_IRQ, DMA_ISR_Handler, (void*)0, (void*)0);
+
+    // Vòng lặp vô hạn
+    while(1);
+
+    return 0;
+}

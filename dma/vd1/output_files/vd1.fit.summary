@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Apr 25 23:52:19 2024
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : vd1
+Top-level Entity Name : vd1
+Family : Cyclone IV E
+Device : EP4CE115F29C8
+Timing Models : Final
+Total logic elements : 2,283 / 114,480 ( 2 % )
+    Total combinational functions : 2,194 / 114,480 ( 2 % )
+    Dedicated logic registers : 1,110 / 114,480 ( < 1 % )
+Total registers : 1110
+Total pins : 2 / 529 ( < 1 % )
+Total virtual pins : 0
+Total memory bits : 275,456 / 3,981,312 ( 7 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
